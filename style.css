@@ -1,0 +1,228 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playfair+Display:wght@700&family=Poppins&display=swap');
+
+/* common style */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1B1717;
+    background-color: #F5F5F5;
+}
+
+
+.container {
+    padding: 0 100px;
+    margin-bottom: 100px;
+}
+
+
+
+.link-button {
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: #EF2F88;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* --------nav bar-------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #1B1717;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #1B1717;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* --------banner------- */
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-left h1 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #1B1717;
+}
+
+.banner-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.banner-right svg:hover {
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+
+/* -----company logo */
+.company-logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #DDDDDD;
+}
+
+/* --------popular collection--------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.gallary-content {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px gray;
+}
+
+.gallary-content img {
+    width: 100%;
+}
+
+.gallary-content i {
+    color: #FC9918;
+}
+
+.gallary-content p {
+    color: #595260;
+    font-size: 15px;
+}
+
+.see-more a {
+    text-decoration: none;
+    float: right;
+    color: #EF2F88;
+    margin: 30px 5px 0 0;
+}
+
+
+/* -------contact--------- */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-left img {
+    width: 90%;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-field {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+
+    border: 1px solid black;
+}
+
+
+/* -----footer--- */
+footer {
+    background-color: #041C32;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-icon a {
+    text-decoration: none;
+    color: #DDDDDD;
+    margin: 10px;
+}
+
+.footer-title {
+    margin: 0px;
+}
+
+
+/* -------responssiv for tablet */
+@media screen and (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .banner-left h1 {
+        font-size: 40px;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+}
+
+
+/* -------responssiv of mobile */
+
+@media screen and (max-width: 768px) {
+
+    .banner,
+    .gallery,
+    .contact {
+        grid-template-columns: 1fr;
+
+    }
+
+    .logo img {
+        width: 50%;
+    }
+}
